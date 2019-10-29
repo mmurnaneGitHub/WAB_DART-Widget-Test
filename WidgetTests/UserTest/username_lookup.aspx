@@ -1,0 +1,1 @@
+<%Response.Write(Request.ServerVariables("AUTH_USER"))%>

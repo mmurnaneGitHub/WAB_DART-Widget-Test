@@ -1,0 +1,26 @@
+<html>  
+<head>  
+<script type="text/javascript">  
+function showUser() {  
+        var xmlhttp = new XMLHttpRequest();  
+        xmlhttp.onreadystatechange = function() {  
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {  
+                document.getElementById("txtHint").innerHTML = xmlhttp.responseText;  
+            }  
+        };  
+  xmlhttp.open("GET", "username_lookup.aspx", true);  
+  xmlhttp.send(); 
+  //see for appeding to log file: https://docs.microsoft.com/en-us/dotnet/standard/io/how-to-open-and-append-to-a-log-file 
+  //xmlhttp.open("GET", "username_logfile.aspx", true);  
+  //xmlhttp.send(); 
+}  
+</script>  
+</head>  
+  
+<body>  
+<form>   
+<button type="button" onclick="showUser();">Click Me!</button>  
+</form>  
+<p>Username: <span id="txtHint"></span></p>  
+</body>  
+</html>  
