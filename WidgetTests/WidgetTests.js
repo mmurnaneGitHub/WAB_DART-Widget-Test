@@ -1,6 +1,6 @@
-   //Simulate mouse clicks for testing widgets - 'My Location' not available & 'Draw' needed line 2272 in Widget.js commented out for v2.13.
-   //var testElementsArray = ['OK', 'Search', 'Close', 'Map Themes', 'Basemap Gallery', '2015 Tacoma', 'Topographic', 'Default extent',  'Legend', 'Layer List', 'Add More Data', 'Add CSV File', 'Add Data List', 'Add ESRI Data', 'Measure', 'Google Street View', 'Draw', 'Print', 'Favorites', 'Help']; //Array of Widgets by ID to click
-   var testElementsArray = ['OK', 'Search', 'Close']; //DAILY TEST OF GEOCODING, PANNING, AND IDENTIFY - Array of Widgets by ID to click
+   //Simulate mouse clicks for testing widgets - 'Draw' needed line 2272 in Widget.js commented out starting at v2.13.
+   var testElementsArray = ['OK', 'Search', 'Close', 'Map Themes', 'Basemap Gallery', '2015 Tacoma', 'Topographic', 'Default extent',  'Legend', 'Layer List', 'Add More Data', 'Add CSV File', 'Add Data List', 'Add ESRI Data', 'Measure', 'Google Street View', 'Draw', 'Print', 'Favorites', 'Help', 'My Location']; //Array of Widgets by ID to click
+   //var testElementsArray = ['OK', 'Search', 'Close']; //DAILY TEST OF GEOCODING, PANNING, AND IDENTIFY - Array of Widgets by ID to click
 
    function simulateButtonClick(element) {
      var promise = new Promise(function(resolve, reject) { // do async operation and process the result
